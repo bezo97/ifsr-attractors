@@ -1,0 +1,10 @@
+@Name: Thomas
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "R. Thomas - Deterministic Chaos Seen in Terms of Feedback Circuit: Analysis, Synthesis, 'Labyrinth Chaos'."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@B: 0.19
+@DT: 0.01
+
+return @DT * (vec3(@B,-@B,-@B)*p + sin(p.yzx));

@@ -1,0 +1,12 @@
+@Name: Rayleigh-Benard
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@DT: 0.01
+
+return @DT * vec3(
+	-9.0*p.x + 9.0*p.y,
+	12.0*p.x - p.y - p.x*p.z,
+	p.x*p.y - 0.5*p.z);

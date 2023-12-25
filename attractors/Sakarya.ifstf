@@ -1,0 +1,13 @@
+@Name: Sakarya
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	-p.x + p.y + p.y*p.z,
+	-p.x - p.y + 0.4*p.x*p.z,
+	p.z - 0.3*p.x*p.y);

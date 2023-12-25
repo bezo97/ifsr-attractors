@@ -1,0 +1,16 @@
+@Name: Anishchenko–Astakhov
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. Based on "V. S. Anishchenko, T. E. Vadivasova, G. I. Strelkova. The Anishchenko–Astakhov Oscillator of Chaotic Self-Sustained Oscillations."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@mu: 1.2
+@eta: 0.5
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@mu + p.x + p.y - p.y*p.z,
+	-p.x,
+	-@eta*p.z + @eta*(p.x>0.0?1.0:0.0)*p.x*p.x);

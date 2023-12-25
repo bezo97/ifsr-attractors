@@ -1,0 +1,16 @@
+@Name: Rabinovich-Fabrikant
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 0.1
+@B: 0.2875
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	p.y*(p.z - 1.0 + p.x*p.x) + @A*p.x,
+	p.x*(3.0*p.z + 1.0 - p.x*p.x) + @A*p.y,
+	-2.0*p.z*(@B + p.x*p.y));

@@ -1,0 +1,15 @@
+@Name: Burke-Shaw
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: http://paulbourke.net/fractals/burkeshaw/
+@Tags: attractor
+
+@S: 10.0
+@V: 4.272
+
+@DT: 0.01
+
+return @DT * vec3(
+	-@S*(p.x + p.y),
+	-p.y - @S*p.x*p.z,
+	@S*p.x*p.y + @V);

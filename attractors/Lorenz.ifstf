@@ -1,0 +1,16 @@
+@Name: Lorenz
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy
+@Reference: https://en.wikipedia.org/wiki/Lorenz_system
+@Tags: attractor
+
+@A: 28.0
+@B: 10.0
+@C: 2.66667
+
+@DT: 0.001
+
+return @DT * vec3(
+	p.x + @A*(p.y - p.x),
+	p.y + p.x*(@B - p.z) - p.y,
+	p.z + p.x*p.y - @C*p.z);

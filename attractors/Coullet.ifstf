@@ -1,0 +1,13 @@
+@Name: Coullet
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "A. Arneodo, P. Coullet, C. Tresser - Possible new strange attractors with spiral structure."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	p.y,
+	p.z,
+	0.8*p.x - 1.1*p.y - 0.45*p.z - p.x*p.x*p.x);

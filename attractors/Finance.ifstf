@@ -1,0 +1,17 @@
+@Name: Finance
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "G. Cai, J. Huang - A New Finance Chaotic Attractor."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 0.00001
+@B: 0.1
+@C: 1.0
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	p.z + (p.y - @A)*p.x,
+	1.0 - @B*p.y - p.x*p.x,
+	-p.x - @C*p.z);

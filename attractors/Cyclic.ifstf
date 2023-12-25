@@ -1,0 +1,10 @@
+@Name: Cyclic
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy
+@Reference: https://en.wikipedia.org/wiki/Thomas%27_cyclically_symmetric_attractor
+@Tags: attractor
+
+@A: 0.208
+@DT: 1.0
+
+return @DT * sin(p.yzx) - @A * p;

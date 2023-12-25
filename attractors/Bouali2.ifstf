@@ -1,0 +1,18 @@
+@Name: Bouali 2
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. Based on "S. Bouali - A 3D Strange Attractor with a Distinctive Silhouette. The Butterfly Effect Revisited."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 3.0
+@B: 2.2
+@C: 1.0
+@mu: 1.51
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@A*p.x*(1.0 - p.y) - @B*p.z,
+	-@C*p.y*(1.0 - p.x*p.x),
+	@mu*p.x);

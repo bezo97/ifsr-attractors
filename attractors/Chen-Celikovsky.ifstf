@@ -1,0 +1,17 @@
+@Name: Chen-Celikovsky
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 36.0
+@B: 3.0
+@C: 20.0
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@A*(p.y - p.x),
+	-p.x*p.z + @C*p.y,
+	p.x*p.y - @B*p.z);

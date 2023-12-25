@@ -1,0 +1,21 @@
+@Name: Aizawa
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://www.michelemorrone.eu/glchaosp/dtAttractors.html
+@Tags: attractor
+
+@A: 0.9692
+@B: 0.7
+@C: 0.6
+@D: 3.5
+@E: 0.25
+@F: 0.1
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	(p.z - @B)*p.x - @D*p.y,
+	@D*p.x + (p.z-@B)*p.y,
+	@C+@A*p.z-p.z*p.z*p.z/3.0-(p.x*p.x+p.y*p.y)*(1.0+@E*p.z)+@F*p.z*p.x*p.x
+);

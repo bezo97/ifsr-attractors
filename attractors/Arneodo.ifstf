@@ -1,0 +1,17 @@
+@Name: Arneodo
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. Based on "A. Arneodo, P. Coullet, J. Peyraud, C. Tresser. - Strange attractors in volterra equations for species in competition."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: -5.5
+@B: 3.5
+@C: -1.0
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	p.y,
+	p.z,
+	-@A*p.x - @B*p.y - p.z + @C*p.x*p.x*p.x);

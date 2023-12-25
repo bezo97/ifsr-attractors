@@ -1,0 +1,16 @@
+@Name: Rössler
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor
+@Tags: attractor
+
+@A: 0.2
+@B: 0.2
+@C: 5.7
+
+@DT: 0.01
+
+return @DT * vec3(
+	-p.y - p.z,
+	p.x + @A*p.y,
+	@B + p.z*(p.x - @C));

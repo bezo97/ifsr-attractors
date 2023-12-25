@@ -1,0 +1,19 @@
+@Name: WangSun
+@Version: 1.0
+@Description: Based on the paper 'A 3-D four-wing attractor and its analysis'. Use with Add=1 and high syntropy.
+@Reference: https://www.researchgate.net/publication/242674950
+@Tags: attractor
+
+@A: 0.2
+@B: -0.01
+@C: 1.0
+@D: -0.4
+@E: -1.0
+@F: -1.0
+
+@DT: 0.001
+
+return @DT * vec3(
+	@A*p.x + @C*p.y*p.z,
+	@B*p.x + @D*p.y - p.x*p.z,
+	@E*p.z + @F*p.x*p.y);

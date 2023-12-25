@@ -1,0 +1,13 @@
+@Name: TSUCS1
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "D. Li - A three-scroll chaotic attractor."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	40.0*(p.y - p.x) + 0.5*p.x*p.z,
+	20.0*p.y - p.x*p.z,
+	0.833*p.z + p.x*p.y - 0.65*p.x*p.x);

@@ -1,0 +1,17 @@
+@Name: Hadley
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. A global-scale tropical atmospheric circulation, named after George Hadley.
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 4.0
+@B: 0.2
+@C: 8.0
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@A*p.z*p.y + p.z*p.x - p.x,
+	p.z*p.y - @A*p.z*p.x - p.y + 1.0,
+	@B*(@C - p.z) - (p.x*p.x + p.y*p.y));

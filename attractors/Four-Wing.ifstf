@@ -1,0 +1,17 @@
+@Name: Four-Wing
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "Z. Wang, Y. Sun, B. J. van Wyk, G. Qi, M. A. van Wyk - A 3-D four-wing attractor and its analysis."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 0.2
+@B: -0.01
+@C: -0.4
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@A*p.x + p.y*p.z,
+	@B*p.x + @C*p.y - p.x*p.z,
+	-p.z - p.x*p.y);

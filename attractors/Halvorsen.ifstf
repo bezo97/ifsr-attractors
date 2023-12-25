@@ -1,0 +1,12 @@
+@Name: Halvorsen
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "J. Herteux, C. Räth - Breaking Symmetries of the Reservoir Equations in Echo State Networks."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@S: 1.3
+
+
+@DT: 0.01
+
+return @DT * (-@S * p - vec3(4.0)*(p.yzx + p.zxy) - p.yzx*p.yzx);

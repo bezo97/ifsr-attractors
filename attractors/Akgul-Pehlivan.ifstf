@@ -1,0 +1,20 @@
+@Name: Akgul-Pehlivan
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. Based on "A. Akgul, I. Pehlivan - A new three-dimensional chaotic system without equilibrium points, its dynamical analyses, and electronic circuit applications."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 2.8
+@B: 0.2
+@C: 1.4
+@D: 1.0
+@E: 10.0
+@F: 2.0
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@A*p.y - p.x + p.z*p.y,
+	-@B*p.x*p.z - @C*p.x + p.y*p.z + @D,
+	@E - @F*p.x*p.y - p.x*p.x);

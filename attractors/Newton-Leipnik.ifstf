@@ -1,0 +1,13 @@
+@Name: Newton-Leipnik
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy. "R. B. Leipnik, T. A. Newton - Double strange attractors in rigid body motion with linear feedback control."
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	0.4*p.x + p.y + 10.0*p.y*p.z,
+	-p.x - 0.4*p.y + 5.0*p.x*p.z,
+	0.175*p.z - 5.0*p.x*p.y);

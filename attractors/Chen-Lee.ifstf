@@ -1,0 +1,17 @@
+@Name: Chen-Lee
+@Version: 1.0
+@Description: Use with Add=1 and high syntropy.
+@Reference: https://observablehq.com/@rreusser/strange-attractors-on-the-gpu-part-2
+@Tags: attractor
+
+@A: 5.0
+@B: -10.0
+@C: -0.38
+
+
+@DT: 0.01
+
+return @DT * vec3(
+	@A*p.x - p.y*p.z,
+	@B*p.y + p.x*p.z,
+	@C*p.z + p.x*p.y/3.0);
